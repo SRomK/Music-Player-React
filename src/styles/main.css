@@ -10,3 +10,7 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.colors{
+    color: blueviolet;
+    font-weight: bold;
+}
