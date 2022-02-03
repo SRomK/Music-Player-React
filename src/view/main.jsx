@@ -1,25 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import ListadoDeCanciones from "../js/component/listadoDeCanciones.jsx";
+import Buscador from "../js/component/buscador.jsx";
+import BarraLateral from "../js/component/barraLateral.jsx";
 
-//create your first component
 const Main = () => {
 	return (
-		<div>
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		<>
+			<div className="container">
+				<div className="barra">
+					<BarraLateral />
+				</div>
+				<div className="tabla">
+					<Buscador />
+					<ListadoDeCanciones />
+				</div>
+			</div>
+		</>
 	);
 };
 
