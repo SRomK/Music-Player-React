@@ -17,7 +17,7 @@ const ListadoDeCanciones = () => {
 				return response.json();
 			})
 			.then((data) => {
-				setSongs([]);
+				setSongs(data);
 			})
 			.catch((err) => {
 				console.error(err);
@@ -26,12 +26,12 @@ const ListadoDeCanciones = () => {
 
 	return (
 		<>
-			<h1>Songs List</h1>
-			<table>
+			<table className="column">
 				<tbody>
 					{songs.map((list, i) => (
 						<tr key={i}>
-							<td className="songsList">{list}</td>
+							<td className="songsListId">{list.id}</td>
+							<td className="songsListName">{list.name}</td>
 						</tr>
 					))}
 				</tbody>
