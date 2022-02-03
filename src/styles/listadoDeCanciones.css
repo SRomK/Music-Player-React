@@ -1,0 +1,7 @@
+.songsList {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    width: 60%;
+    
+}
