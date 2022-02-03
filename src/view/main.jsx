@@ -1,20 +1,20 @@
-import React from "react";
-import miniPlayer from "../js/component/miniPlayer.jsx";
+import React, { useEffect, useState } from "react";
 
-//include images into your bundle
+import ListadoDeCanciones from "../js/component/listadoDeCanciones.jsx";
+import Buscador from "../js/component/buscador.jsx";
+import BarraLateral from "../js/component/barraLateral.jsx";
 
-//create your first component
 const Main = () => {
 	return (
 		<>
-			<div>
-				<h1 className="text-center mt-5 colors">
-					Music Player with React
-				</h1>
-				<miniPlayer
-					song={song[currentSongIndex]}
-					nextSong={songs[nextSongIndex]}
-				/>
+			<div className="container">
+				<div className="barra">
+					<BarraLateral />
+				</div>
+				<div className="tabla">
+					<Buscador />
+					<ListadoDeCanciones />
+				</div>
 			</div>
 		</>
 	);
