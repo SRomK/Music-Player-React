@@ -2,7 +2,7 @@ import React from "react";
 
 const Buscador = () => {
 	return (
-		<div class="navbar navbar-expand-lg navbar-light bg-dark">
+		<div class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid justify-content-end">
 				<form class="d-flex ">
 					<input
