@@ -2,9 +2,9 @@ import React from "react";
 
 const Buscador = () => {
 	return (
-		<div class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<form class="d-flex">
+		<div class="navbar navbar-expand-lg navbar-light bg-dark">
+			<div class="container-fluid justify-content-end">
+				<form class="d-flex ">
 					<input
 						class="form-control me-2"
 						type="search"
