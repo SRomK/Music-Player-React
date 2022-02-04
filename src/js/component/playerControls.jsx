@@ -8,20 +8,26 @@ import {
 	faBackward,
 } from "@fortawesome/free-solid-svg-icons";
 
-const playerControls = () => {
+const playerControls = (props) => {
 	return (
 		<div className="c-player--controls">
-			<button className="skip-btn">
+			<button onClick={() => props.handleBackward} className="skip-btn">
 				<FontAwesomeIcon icon={faBackward} />
 			</button>
-			<button className="play-btn">
+			<button onClick={() => props.handlePlay} className="play-btn">
 				<FontAwesomeIcon icon={faPlay} />
 			</button>
-			<button className="skip-btn">
+			<button onClick={() => props.handleForward} className="skip-btn">
 				<FontAwesomeIcon icon={faForward} />
 			</button>
 		</div>
 	);
 };
+
+playerControls.propTypes = {
+	handleBackward: propTypes.func,
+	handleForward: propTypes.func,
+	handlePlay: propTypes.func
+}
 
 export default playerControls;
