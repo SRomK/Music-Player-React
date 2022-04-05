@@ -1,0 +1,30 @@
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.player {
+    color:white;
+}
+
+.playlist{
+    overflow-y: scroll;
+    height: 25rem;
+    margin: 10rem, 0;
+}
+
+.track{
+    font-size: 1rem;
+    list-style:none;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(31, 29, 29);
+    border-bottom-width: 2px;
+    text-align: center;
+    color: rgb(17, 122, 13);
+    padding:0.5rem;
+}
+h1 {
+    padding-left: 40%;
+    color: white;
+}
